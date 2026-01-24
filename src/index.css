@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm cream/bakery palette */
+    --background: 36 33% 97%;
+    --foreground: 20 25% 15%;
+
+    --card: 36 40% 98%;
+    --card-foreground: 20 25% 15%;
+
+    --popover: 36 40% 98%;
+    --popover-foreground: 20 25% 15%;
+
+    /* Rich burgundy/maroon primary */
+    --primary: 350 65% 35%;
+    --primary-foreground: 36 40% 98%;
+
+    /* Soft rose secondary */
+    --secondary: 350 30% 90%;
+    --secondary-foreground: 350 65% 30%;
+
+    /* Warm muted tones */
+    --muted: 30 20% 92%;
+    --muted-foreground: 20 15% 45%;
+
+    /* Gold/honey accent */
+    --accent: 38 80% 55%;
+    --accent-foreground: 20 25% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 36 40% 98%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 350 65% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for the bakery theme */
+    --cream: 36 33% 97%;
+    --rose: 350 50% 85%;
+    --rose-deep: 350 60% 75%;
+    --burgundy: 350 65% 35%;
+    --burgundy-light: 350 50% 45%;
+    --gold: 38 80% 55%;
+    --gold-light: 38 70% 75%;
+    --chocolate: 20 40% 25%;
+    --chocolate-light: 20 30% 35%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(350 50% 85% / 0.4) 0%, hsl(36 33% 97%) 50%, hsl(38 70% 75% / 0.3) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(36 40% 98%) 0%, hsl(36 33% 95%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(350 65% 35%) 0%, hsl(350 50% 45%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(38 80% 55%) 0%, hsl(38 70% 45%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(20 25% 15% / 0.08);
+    --shadow-medium: 0 8px 30px -8px hsl(20 25% 15% / 0.12);
+    --shadow-card: 0 4px 24px -6px hsl(350 65% 35% / 0.1);
+    --shadow-float: 0 12px 40px -12px hsl(20 25% 15% / 0.15);
+
+    --sidebar-background: 36 33% 97%;
+    --sidebar-foreground: 20 25% 15%;
+    --sidebar-primary: 350 65% 35%;
+    --sidebar-primary-foreground: 36 40% 98%;
+    --sidebar-accent: 350 30% 90%;
+    --sidebar-accent-foreground: 350 65% 30%;
+    --sidebar-border: 30 20% 88%;
+    --sidebar-ring: 350 65% 35%;
+  }
+
+  .dark {
+    --background: 20 25% 10%;
+    --foreground: 36 33% 95%;
+
+    --card: 20 25% 12%;
+    --card-foreground: 36 33% 95%;
+
+    --popover: 20 25% 12%;
+    --popover-foreground: 36 33% 95%;
+
+    --primary: 350 55% 55%;
+    --primary-foreground: 20 25% 10%;
+
+    --secondary: 20 20% 18%;
+    --secondary-foreground: 36 33% 95%;
+
+    --muted: 20 20% 18%;
+    --muted-foreground: 30 15% 60%;
+
+    --accent: 38 70% 50%;
+    --accent-foreground: 20 25% 10%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 36 33% 95%;
+
+    --border: 20 20% 20%;
+    --input: 20 20% 20%;
+    --ring: 350 55% 55%;
+
+    --sidebar-background: 20 25% 10%;
+    --sidebar-foreground: 36 33% 95%;
+    --sidebar-primary: 350 55% 55%;
+    --sidebar-primary-foreground: 20 25% 10%;
+    --sidebar-accent: 20 20% 18%;
+    --sidebar-accent-foreground: 36 33% 95%;
+    --sidebar-border: 20 20% 20%;
+    --sidebar-ring: 350 55% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .heading-hero {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .heading-section {
+    @apply text-3xl sm:text-4xl md:text-5xl font-semibold;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .heading-card {
+    @apply text-xl sm:text-2xl font-semibold;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .text-body {
+    @apply text-base leading-relaxed;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .text-body-sm {
+    @apply text-sm leading-relaxed;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-cta {
+    background: var(--gradient-cta);
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-float {
+    box-shadow: var(--shadow-float);
+  }
+
+  .glass {
+    @apply backdrop-blur-md;
+    background: hsl(var(--background) / 0.8);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-medium transition-all duration-300;
+    background: var(--gradient-cta);
+    color: hsl(var(--primary-foreground));
+    box-shadow: 0 4px 14px -4px hsl(var(--primary) / 0.4);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -4px hsl(var(--primary) / 0.5);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-medium transition-all duration-300 border-2;
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
+    background: transparent;
+  }
+
+  .btn-secondary:hover {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-medium transition-all duration-300;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    box-shadow: 0 4px 14px -4px rgba(37, 211, 102, 0.4);
+  }
+
+  .btn-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.5);
+  }
+
+  .card-cake {
+    @apply rounded-2xl overflow-hidden transition-all duration-300;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .card-cake:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-float);
+  }
+
+  .floating-btn {
+    @apply fixed z-50 rounded-full p-4 transition-all duration-300;
+    box-shadow: var(--shadow-float);
+  }
+
+  .floating-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-cta);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
