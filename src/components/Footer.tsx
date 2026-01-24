@@ -86,7 +86,7 @@ export default function Footer() {
             <h4 className="font-serif text-lg font-semibold mb-4">{t('footer.payment')}</h4>
             <div className="space-y-2">
               <span className="block text-background/70 text-sm">💵 Cash on Delivery</span>
-              <span className="block text-sm" style={{ color: '#E2136E' }}>● bKash: 01875268567</span>
+              <span className="block text-sm" style={{ color: '#E2136E' }}>● bKash: 01896314889</span>
             </div>
           </div>
 

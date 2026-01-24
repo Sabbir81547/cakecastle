@@ -12,13 +12,13 @@ export const siteConfig = {
   },
   
   // Contact Information
-  phone: '+880 1875-268567',
-  whatsappNumber: '8801875268567', // Without + sign
+  phone: '+880 1896314889',
+  whatsappNumber: '01896314889', // Without + sign
   email: 'cakecastle@example.com',
   facebookPageUrl: 'https://www.facebook.com/share/1Fy8Kbidcu/',
   facebookPage: '1Fy8Kbidcu',
   instagramHandle: 'cakecastlebeanibazar',
-  bkashNumber: '01875268567',
+  bkashNumber: '01896314889',
   
   // Location
   location: {
