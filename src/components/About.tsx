@@ -12,7 +12,7 @@ export default function About() {
   const { t, language } = useLanguage();
 
   const features = [
-    { icon: Sparkles, textKey: 'about.handmade', color: 'from-rose-400 to-rose-500' },
+    { icon: Sparkles, textKey: 'about.handmade', color: 'from-blue-400 to-blue-500' },
     { icon: Clock, textKey: 'about.fresh', color: 'from-amber-400 to-amber-500' },
     { icon: MapPin, textKey: 'about.local', color: 'from-primary to-primary/80' },
   ];

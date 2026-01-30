@@ -120,9 +120,7 @@ export default function HowToOrder() {
             <span className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium text-white" style={{ background: '#E2136E' }}>
               bKash
             </span>
-            <span className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium text-white" style={{ background: '#F6921E' }}>
-              Nagad
-            </span>
+          
           </div>
         </motion.div>
       </div>

@@ -67,38 +67,28 @@ export default function CakeCard({ cake, index = 0, showOverlay = true, compact 
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             
             {/* Badges */}
-            <div className="absolute top-4 sm:top-5 left-3 sm:left-4 flex flex-col gap-1.5 sm:gap-2">
-              {cake.isBestseller && (
-                <motion.span 
-                  className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-gradient-to-r from-amber-400 to-amber-500 text-white shadow-md"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.3 + index * 0.1, type: 'spring' }}
-                >
-                  ⭐ {t('featured.bestseller')}
-                </motion.span>
-              )}
-              {cake.isNew && (
-                <motion.span 
-                  className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-md"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.4 + index * 0.1, type: 'spring' }}
-                >
-                  🆕 {t('featured.new')}
-                </motion.span>
-              )}
-              {cake.isPopular && !cake.isBestseller && (
-                <motion.span 
-                  className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-gradient-to-r from-rose-400 to-rose-500 text-white shadow-md"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.5 + index * 0.1, type: 'spring' }}
-                >
-                  🔥 {t('featured.popular')}
-                </motion.span>
-              )}
-            </div>
+            {/* Top Badge Banner - Redesigned to follow the dome shape */}
+            {(cake.isBestseller || cake.isNew || cake.isPopular) && (
+              <div 
+                className={`absolute top-0 left-0 w-full pt-4 pb-2 z-20 flex items-center justify-center text-center shadow-lg transform -translate-y-1 ${
+                  cake.isBestseller 
+                    ? 'bg-[#FFB800] text-black' 
+                    : cake.isNew 
+                      ? 'bg-primary text-white' 
+                      : 'bg-[#FF4D4D] text-white'
+                }`}
+                style={{
+                  height: '45px',
+                  clipPath: 'polygon(0% 100%, 5% 50%, 15% 20%, 30% 0%, 50% 0%, 70% 0%, 85% 20%, 95% 50%, 100% 100%)'
+                }}
+              >
+                <span className="text-[10px] sm:text-xs font-bold tracking-widest uppercase">
+                  {cake.isBestseller ? `★ ${t('featured.bestseller')}` : 
+                   cake.isNew ? `NEW ${t('featured.new')}` : 
+                   `🔥 ${t('featured.popular')}`}
+                </span>
+              </div>
+            )}
 
             {/* Hover Overlay with Actions */}
             {showOverlay && (

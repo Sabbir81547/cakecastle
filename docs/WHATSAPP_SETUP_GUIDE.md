@@ -111,7 +111,7 @@ Your website already has WhatsApp integration:
 
 - **Click-to-Chat Links**: Opens WhatsApp with pre-filled message
 - **WhatsApp Number**: 8801875268567
-- **Pre-filled Message**: "আসসালামু আলাইকুম! আমি কেক ক্যাসল থাইকা কেক অর্ডার দিতে চাই"
+- **Pre-filled Message**: "আসসালামু আলাইকুম! আমি কেক ক্যাসল থেকে কেক অর্ডার দিতে চাই"
 
 ### How It Works
 

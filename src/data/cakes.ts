@@ -10,6 +10,15 @@ import cakeVanilla from '@/assets/cake-vanilla.jpg';
 import cakeFruit from '@/assets/cake-fruit.jpg';
 import cakeWedding from '@/assets/cake-wedding.jpg';
 import cupcakes from '@/assets/cupcakes.jpg';
+import cakeRoyal from '@/assets/cake-royal-wedding.png';
+import cakeGolden from '@/assets/cake-golden-anniversary.png';
+import cakeCartoon from '@/assets/cake-cartoon.png';
+import cakeSuperhero from '@/assets/cake-superhero.png';
+import cakeCastle from '@/assets/cake-castle.png';
+import cakeEid from '@/assets/cake-eid.png';
+import cakeRedVelvetNew from '@/assets/cake-redvelvet.jpg';
+import cakeHeartAnniversary from '@/assets/cake-heart-anniversary.jpg';
+import cakePohelaBoishakh from '@/assets/cake-pohela-boishakh.jpg';
 
 // ======================================================
 // TYPES
@@ -184,8 +193,8 @@ export const cakes: Cake[] = [
       bn: 'আমাদের সিগনেচার রেড ভেলভেট কেক হইলো সূক্ষ্ম কোকো ফ্লেভার আর ভ্যানিলার নিখুঁত মিশ্রণ, ঘরে তৈরি ক্রিম চিজ ফ্রস্টিং দিয়া সাজানো। প্রতিটা লেয়ার নরম আর ময়েশ্চার, যা এক অবিস্মরণীয় স্বাদ দেয়।'
     },
     category: 'birthday',
-    image: cakeRedvelvet,
-    gallery: [cakeRedvelvet, cakeChocolate, cakeVanilla, cakeFruit],
+    image: cakeRedVelvetNew,
+    gallery: [cakeRedVelvetNew, cakeChocolate, cakeVanilla, cakeFruit],
     basePrice: 800,
     sizes: [
       { size: 'Small', weight: '1 lb', price: 800, serves: '4-6 people' },
@@ -257,7 +266,7 @@ export const cakes: Cake[] = [
       { size: 'Large', weight: '3 lb', price: 1600, serves: '15-20 people' },
     ],
     flavors: ['Classic Vanilla', 'French Vanilla', 'Vanilla Bean'],
-    isPopular: false,
+    isPopular: true,
     isNew: false,
     isBestseller: false,
     ingredients: {
@@ -314,8 +323,8 @@ export const cakes: Cake[] = [
       bn: 'আপনার বিয়ার লাগি চূড়ান্ত স্টেটমেন্ট পিস। এলিগ্যান্ট সোনালি অ্যাকসেন্ট, হাতে পাইপ করা রয়্যাল আইসিং, আর ঝরনার মতো চিনির ফুল। এমন একটা শোস্টপার যা আপনার অতিথিদের মুগ্ধ কইরা দিব।'
     },
     category: 'wedding',
-    image: cakeWedding,
-    gallery: [cakeWedding, cakeVanilla, cupcakes, cakeRedvelvet],
+    image: cakeRoyal,
+    gallery: [cakeRoyal, cakeWedding, cupcakes, cakeRedvelvet],
     basePrice: 5000,
     sizes: [
       { size: '3 Tier', weight: '10 lb', price: 5000, serves: '60-70 people' },
@@ -348,8 +357,8 @@ export const cakes: Cake[] = [
       bn: 'আমাদের রোমান্টিক হার্ট শেপ এনিভার্সারি কেক দিয়া আপনার ভালোবাসা উদযাপন করেন। গোলাপ আর পার্সোনালাইজড মেসেজ দিয়া সাজানো, দম্পতিদের বিশেষ মাইলফলক উদযাপনের লাগি পারফেক্ট।'
     },
     category: 'anniversary',
-    image: cakeRedvelvet,
-    gallery: [cakeRedvelvet, cakeChocolate, cakeFruit, cakeWedding],
+    image: cakeHeartAnniversary,
+    gallery: [cakeHeartAnniversary, cakeChocolate, cakeFruit, cakeWedding],
     basePrice: 900,
     sizes: [
       { size: 'Small Heart', weight: '1.5 lb', price: 900, serves: '6-8 people' },
@@ -380,8 +389,8 @@ export const cakes: Cake[] = [
       bn: '২৫তম বা ৫০তম এর মতো মাইলফলক এনিভার্সারির লাগি পারফেক্ট। এলিগ্যান্ট সোনালি অ্যাকসেন্ট, বছর সহ পার্সোনালাইজড টপার, আর আপনার পছন্দের প্রিমিয়াম ফ্লেভার।'
     },
     category: 'anniversary',
-    image: cakeWedding,
-    gallery: [cakeWedding, cakeRedvelvet, cakeVanilla, cupcakes],
+    image: cakeGolden,
+    gallery: [cakeGolden, cakeWedding, cakeRedvelvet, cupcakes],
     basePrice: 1500,
     sizes: [
       { size: 'Standard', weight: '2 lb', price: 1500, serves: '10-12 people' },
@@ -414,8 +423,8 @@ export const cakes: Cake[] = [
       bn: 'আপনার ছোট্টদের জন্মদিন জাদুময় করেন! যেকোনো কার্টুন ক্যারেক্টার বাছাই করেন আর আমরা সেইটা সুন্দরভাবে সুস্বাদু কেকে তৈরি কইরা দিমু। জনপ্রিয় চয়েসগুলার মধ্যে আছে ডোরেমন, বেন ১০, ফ্রোজেন, বার্বি ইত্যাদি।'
     },
     category: 'kids',
-    image: cakeVanilla,
-    gallery: [cakeVanilla],
+    image: cakeCartoon,
+    gallery: [cakeCartoon, cakeVanilla],
     basePrice: 1000,
     sizes: [
       { size: 'Small', weight: '1.5 lb', price: 1000, serves: '8-10 people' },
@@ -446,8 +455,8 @@ export const cakes: Cake[] = [
       bn: 'ছোট্ট হিরোদের লাগি! স্পাইডার-ম্যান, ব্যাটম্যান, সুপারম্যান, অ্যাভেঞ্জার্স বা আপনার বাচ্চার পছন্দের যেকোনো সুপারহিরো বাছাই করেন। অ্যাকশন ফিগার টপার আর থিমড ডেকোরেশন সহ।'
     },
     category: 'kids',
-    image: cakeChocolate,
-    gallery: [cakeChocolate],
+    image: cakeSuperhero,
+    gallery: [cakeSuperhero, cakeChocolate],
     basePrice: 1200,
     sizes: [
       { size: 'Standard', weight: '2 lb', price: 1200, serves: '10-12 people' },
@@ -478,8 +487,8 @@ export const cakes: Cake[] = [
       bn: 'প্রতিটা ছোট্ট মেয়ে রাজকন্যা হওয়ার স্বপ্ন দেখে! আমাদের ক্যাসল কেকে আছে টাওয়ার, টারেট, আর আপনার পছন্দের প্রিন্সেস থিম - ফ্রোজেন, সিন্ডারেলা, বা কাস্টম ডিজাইন।'
     },
     category: 'kids',
-    image: cakeVanilla,
-    gallery: [cakeVanilla],
+    image: cakeCastle,
+    gallery: [cakeCastle, cakeVanilla],
     basePrice: 1500,
     sizes: [
       { size: 'Mini Castle', weight: '2 lb', price: 1500, serves: '12-15 people' },
@@ -512,8 +521,8 @@ export const cakes: Cake[] = [
       bn: 'আমাদের স্পেশালি ডিজাইন করা ফেস্টিভ কেক দিয়া ঈদ উদযাপন করেন। চাঁদ আর তারা ডেকোরেশন সহ, পারিবারিক সমাবেশের লাগি পারফেক্ট প্রিমিয়াম ফ্লেভারে পাওয়া যায়।'
     },
     category: 'seasonal',
-    image: cakeVanilla,
-    gallery: [cakeVanilla],
+    image: cakeEid,
+    gallery: [cakeEid, cakeVanilla],
     basePrice: 850,
     sizes: [
       { size: 'Family', weight: '2 lb', price: 850, serves: '10-12 people' },
@@ -544,8 +553,8 @@ export const cakes: Cake[] = [
       bn: 'আমাদের স্পেশালি ডিজাইন করা পহেলা বৈশাখের কেক দিয়া বাংলা নববর্ষকে স্বাগতম জানান। ঐতিহ্যবাহী আলপনা ডিজাইন, লাল-সাদা থিম, আর ক্লাসিক বাংলা ফ্লেভার সহ।'
     },
     category: 'seasonal',
-    image: cakeRedvelvet,
-    gallery: [cakeRedvelvet],
+    image: cakePohelaBoishakh,
+    gallery: [cakePohelaBoishakh],
     basePrice: 900,
     sizes: [
       { size: 'Standard', weight: '2 lb', price: 900, serves: '10-12 people' },
@@ -576,8 +585,8 @@ export const cakes: Cake[] = [
       bn: 'আমাদের রোমান্টিক ভ্যালেন্টাইন স্পেশাল কেক দিয়া আপনার ভালোবাসা প্রকাশ করেন। হার্ট শেপ, গোলাপ ডেকোরেশন, আর পার্সোনালাইজড প্রেম বার্তা সহ।'
     },
     category: 'seasonal',
-    image: cakeRedvelvet,
-    gallery: [cakeRedvelvet],
+    image: cakeHeartAnniversary,
+    gallery: [cakeHeartAnniversary],
     basePrice: 1000,
     sizes: [
       { size: 'Couple', weight: '1 lb', price: 1000, serves: '4-6 people' },

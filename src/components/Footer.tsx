@@ -27,12 +27,6 @@ export default function Footer() {
       label: 'Facebook',
       color: '#1877F2'
     },
-    { 
-      icon: Instagram, 
-      href: getInstagramLink(), 
-      label: 'Instagram',
-      color: '#E4405F'
-    },
   ];
 
   return (
@@ -46,9 +40,9 @@ export default function Footer() {
                 <Logo size="md" showText={true} inverted />
               </Link>
             </motion.div>
-            <p className="text-background/70 text-sm leading-relaxed mb-4">
+            {/* <p className="text-background/70 text-sm leading-relaxed mb-4">
               {t('footer.tagline')}
-            </p>
+            </p> */}
             <p className="text-background/60 text-sm">
               Beanibazar, Sylhet, Bangladesh
             </p>
@@ -86,7 +80,7 @@ export default function Footer() {
             <h4 className="font-serif text-lg font-semibold mb-4">{t('footer.payment')}</h4>
             <div className="space-y-2">
               <span className="block text-background/70 text-sm">💵 Cash on Delivery</span>
-              <span className="block text-sm" style={{ color: '#E2136E' }}>● bKash: 01896314889</span>
+              <span className="block text-sm" style={{ color: '#E2136E' }}>● bKash: 01875268567</span>
             </div>
           </div>
 
@@ -117,13 +111,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-background/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-background/10 flex flex-col sm:flex-row justify-centers items-center gap-4">
           <p className="text-background/60 text-sm text-center sm:text-left">
             © {currentYear} Cake Castle Beanibazar. {t('footer.rights')}.
           </p>
-          <p className="text-background/60 text-sm flex items-center gap-1">
-            {t('footer.madeWith')} <Heart className="w-4 h-4 text-rose" /> {t('footer.inBangladesh')}
-          </p>
+       
         </div>
       </div>
     </footer>

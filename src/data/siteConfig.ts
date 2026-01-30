@@ -13,12 +13,12 @@ export const siteConfig = {
   
   // Contact Information
   phone: '+880 1896314889',
-  whatsappNumber: '01896314889', // Without + sign
+  whatsappNumber: '8801896314889', // With country code
   email: 'cakecastle@example.com',
   facebookPageUrl: 'https://www.facebook.com/share/1Fy8Kbidcu/',
   facebookPage: '1Fy8Kbidcu',
   instagramHandle: 'cakecastlebeanibazar',
-  bkashNumber: '01896314889',
+  bkashNumber: '01875268567',
   
   // Location
   location: {
@@ -201,7 +201,7 @@ export const siteConfig = {
 export const quickMessages = {
   general: {
     en: 'Hello! I want to order a cake from Cake Castle Beanibazar',
-    bn: 'আসসালামু আলাইকুম! আমি কেক ক্যাসল থাইকা কেক অর্ডার দিতে চাই'
+    bn: 'আসসালামু আলাইকুম! আমি কেক ক্যাসল থেকে কেক অর্ডার দিতে চাই'
   },
   customOrder: {
     en: 'Hi! I want to order a custom cake. Here are my requirements:',

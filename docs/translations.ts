@@ -107,7 +107,7 @@ export const translations: Translations = {
   'custom.step2.title': { en: 'Get a Quote', bn: 'কোটেশন নিন' },
   'custom.step2.desc': { en: 'We\'ll provide a price estimate and discuss design details', bn: 'আমরা দাম জানামু আর ডিজাইনের বিস্তারিত আলাপ করমু' },
   'custom.step3.title': { en: 'Confirm & Pay', bn: 'নিশ্চিত করেন ও পেমেন্ট করেন' },
-  'custom.step3.desc': { en: 'Confirm your order with 50% advance payment via bKash/Nagad', bn: 'বিকাশ/নগদে ৫০% অগ্রিম পেমেন্ট দিয়া অর্ডার নিশ্চিত করেন' },
+  'custom.step3.desc': { en: 'Confirm your order with 50% advance payment via bKash/Nagad', bn: 'বিকাশথেকে ৫০% অগ্রিম পেমেন্ট দিয়া অর্ডার নিশ্চিত করেন' },
   'custom.step4.title': { en: 'Enjoy Your Cake!', bn: 'কেক উপভোগ করেন!' },
   'custom.step4.desc': { en: 'Pick up or get delivery on your special day', bn: 'আপনার বিশেষ দিনে পিকআপ করেন বা ডেলিভারি নিন' },
 

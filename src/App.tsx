@@ -13,6 +13,7 @@ import GalleryPage from "./pages/GalleryPage";
 import CustomOrderPage from "./pages/CustomOrderPage";
 import TermsPage from "./pages/TermsPage";
 import NotFound from "./pages/NotFound";
+import FloatingButtons from "./components/FloatingButtons";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => (
         <BrowserRouter>
           <ScrollToTop />
           <AnimatedRoutes />
+          <FloatingButtons />
         </BrowserRouter>
       </LanguageProvider>
     </TooltipProvider>
