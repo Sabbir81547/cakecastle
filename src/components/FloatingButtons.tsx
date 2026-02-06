@@ -19,7 +19,7 @@ export default function FloatingButtons() {
 
   const quickMessages = [
     { en: 'I want to order a cake', bn: 'আমি একটি কেক অর্ডার করতে চাই' },
-    { en: 'What are your prices?', bn: 'আপনার দাম কত?' },
+    { en: 'What are your prices?', bn: 'দাম কত?' },
     { en: 'Do you deliver?', bn: 'আপনি কি ডেলিভারি করেন?' },
     { en: 'Custom cake inquiry', bn: 'কাস্টম কেক সম্পর্কে জানতে চাই' },
   ];
